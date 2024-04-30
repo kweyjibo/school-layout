@@ -1,0 +1,22 @@
+nav(class='nav')
+  mixin navLink(title, url)
+    div(class='nav__i')
+      a(href=url, class="nav_lk")&attributes(attributes)= title
+
+  label(for='nav-trigger' class='nav-trigger')
+  input(type='checkbox' id='nav-trigger' class='nav-checkbox')
+
+  div(class='nav-popup')
+    div(class='nav-popup__inner')
+      +navLink('Subject of education', '#')(class='__active')
+      +navLink('Learning', '#')
+      +navLink('Payment', '#')
+      +navLink('Contacts', '#')
+    div(class='nav-popup__right')
+      +navLink('Regestration', '#')
+
+    div(class="nav-reg")
+      include ../components/button.pug
+      +button('Sign in', 'left')
+
+      

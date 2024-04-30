@@ -1,0 +1,39 @@
+/* --------------- Vars -------------------- */
+
+@import "vars";
+
+/* --------------- /vars -------------------- */
+
+@media screen and (max-device-width: $mobile), screen and (max-width: $mobile) {
+  .header-bottom {
+    display: block;
+  }
+
+  .header-banner {
+    padding-top: 24px;
+    max-width: none;
+
+    text-align: center;
+  }
+
+  .header-banner__content {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .header-banner__dsc {
+    font-size: 12px;
+  }
+
+  .header-pic {
+    text-align: center;
+  }
+
+  .header-banner__content:after {
+    width: 100%;
+  }
+
+  .education__tx {
+    display: none;
+  }
+}

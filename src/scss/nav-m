@@ -1,0 +1,57 @@
+/* --------------- Vars -------------------- */
+
+@import "vars";
+
+$popup-shift-m: 8px;
+
+/* --------------- /vars -------------------- */
+
+@media screen and (max-device-width: $mobile), screen and (max-width: $mobile) {
+  .nav {
+    /* position: relative; */
+    padding: 0;
+    margin-right: 5px;
+    float: right;
+
+    width: 30px;
+    height: 30px;
+  }
+
+  .nav-trigger {
+    display: block;
+  }
+
+  .nav-popup {
+    display: none;
+    position: absolute;
+    z-index: 1;
+
+    top: $popup-shift-m;
+    right: $popup-shift-m;
+    left: $popup-shift-m;
+    bottom: $popup-shift-m;
+
+    padding: 50px 24px;
+
+    background-color: #fff;
+    border-radius: 35px;
+  }
+
+  .nav-checkbox:checked ~ .nav-popup {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav__i {
+    margin-bottom: 20px;
+  }
+
+  .nav_lk {
+    font-size: 20px;
+  }
+
+  .nav-reg {
+    flex: 1;
+    align-items: end;
+  }
+}

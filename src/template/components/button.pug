@@ -1,0 +1,10 @@
+
+mixin button(title,type)
+    button(class="btn")&attributes(attributes)
+      if type === 'left'
+        span(class="btn__arrow-left")
+          img(src="res/arrow-left-btn.svg" alt="arrow")
+      = title
+      if type === 'right'
+        span(class="btn__arrow")
+          img(src="res/arrow-btn.svg" alt="arrow")

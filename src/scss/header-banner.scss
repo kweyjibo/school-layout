@@ -1,0 +1,41 @@
+/* --------------- Vars -------------------- */
+
+@import "vars";
+
+/* --------------- /vars -------------------- */
+
+.header-banner {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  max-width: 638px;
+}
+
+.header-banner__content {
+  position: relative;
+  padding-bottom: 32px;
+  margin-bottom: 12px;
+
+  font-size: 46px;
+  line-height: 1.1;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 65%;
+    height: 2px;
+
+    background-color: #dedede;
+  }
+}
+
+.header-banner__dsc {
+  padding-bottom: 16px;
+  line-height: 1.5;
+}
+
+.header-banner__high {
+  color: $main-color;
+}

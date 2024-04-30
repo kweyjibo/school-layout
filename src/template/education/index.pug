@@ -1,0 +1,22 @@
+div(class='island-inner')
+  h2(class='title')
+    | Excepteur sint occaecat cupidatat:
+
+  div(class='education')
+    div(class='education__img')
+      img(src='res/education.svg')
+    div
+      div(class='tags')
+        mixin education-tag(title)
+          span(class="tag")&attributes(attributes)
+            = title
+
+        +education-tag('HTML')
+        +education-tag('Java Script')(style='background-color: #ffd700')
+        +education-tag('Phyton')(style='background-color: #4bd071')
+        +education-tag(' Excepteur sint occaecat')(style='background-color: #ff6f50')
+        +education-tag('Lorem ipsum dolor sit amet')(style='background-color: #af93ff')
+        +education-tag('Git')(style='background-color: #4b77b9')
+      
+      div(class='education__tx')
+        | Lorem ipsum dolor sit amet, consectetur adipiscing elit

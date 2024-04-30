@@ -1,0 +1,11 @@
+/* --------------- Vars -------------------- */
+
+@import "vars";
+
+/* --------------- /vars -------------------- */
+
+@media screen and (max-device-width: $mobile), screen and (max-width: $mobile) {
+  .title {
+    font-size: 24px;
+  }
+}

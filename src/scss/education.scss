@@ -1,0 +1,29 @@
+/* --------------- Vars -------------------- */
+
+@import "vars";
+
+/* --------------- /vars -------------------- */
+
+.education {
+  display: flex;
+  max-width: 1268px;
+
+  padding: 24px;
+
+  border-radius: 36px;
+  background-color: #eaf2f5;
+}
+
+.education__img {
+  padding-left: 120px;
+  padding-right: 54px;
+
+  img {
+    display: block;
+  }
+}
+
+.education__tx {
+  padding-top: 20px;
+  font-size: 20px;
+}

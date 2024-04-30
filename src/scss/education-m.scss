@@ -1,0 +1,21 @@
+/* --------------- Vars -------------------- */
+
+@import "vars";
+
+/* --------------- /vars -------------------- */
+
+@media screen and (max-device-width: $mobile), screen and (max-width: $mobile) {
+  .education {
+    padding: 16px;
+
+    border-radius: 30px;
+  }
+
+  .education__img {
+    display: none;
+  }
+
+  .education__tx {
+    font-size: 14px;
+  }
+}

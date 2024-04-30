@@ -1,0 +1,36 @@
+{
+  "name": "YTYT",
+  "version": "1.0.0",
+  "description": "Practice layout",
+  "output-directory": "public",
+  "scripts": {
+    "start": "parcel ./src/index.pug --port 1111 --dist-dir ./public",
+    "build": "parcel build ./src/index.pug --dist-dir ./public",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kweyjibo/ytyt-landing.git"
+  },
+  "keywords": [
+    "html",
+    "layout"
+  ],
+  "author": "kweyjibo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kweyjibo/ytyt-landing/issues"
+  },
+  "homepage": "https://github.com/kweyjibo/ytyt-landing#readme",
+  "dependencies": {
+    "parcel-bundler": "1.12.4"
+  },
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.7.0",
+    "@parcel/transformer-sass": "^2.7.0",
+    "marked": "1.2.8",
+    "parcel": "^2.12.0",
+    "pug": "3.0.2",
+    "sass": "1.75"
+  }
+}
